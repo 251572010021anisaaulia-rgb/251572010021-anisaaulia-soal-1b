@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        ORG_NAME: "anisa aulia"
+        ORG_TAGLINE: "Mentransformasi Ide Menjadi Realita Digital."
+        ORG_MISSION: "Mengembangkan kemampuan mahasiswa di bidang teknologi informasi melalui pelatihan, kolaborasi, dan inovasi."
+        ORG_VISION: "Menjadi komunitas teknologi yang aktif, kreatif, dan berprestasi."
+        ORG_FOUNDED: "2026"
+        ORG_MEMBERS: "20"
+        ORG_DIVISION: "4"
+        ORG_EMAIL: "bemstmiktazkia@gmail.com"
+        ORG_LOCATION: "STMIK Tazkia Bogor"
+
+    image: soal-1b-web
+    container_name: soal-1b-web
+
+    ports:
+      - "8511:80"
